@@ -24,3 +24,17 @@ const images = [
     alt: "Lighthouse Coast Sea",
   }
 ];
+
+// Отримуємо елемент списку
+const galleryList = document.querySelector('.gallery');
+
+// Генеруємо HTML-розмітку
+const markup = images
+  .map(({ url, alt }) => {
+    return `<li class="gallery-item"><img src="${url}" alt="${alt}" class="gallery-image"></li>`;
+  })
+  .join("");
+
+// Додаємо до DOM за одну операцію
+galleryList.insertAdjacentHTML("beforeend", markup);
+

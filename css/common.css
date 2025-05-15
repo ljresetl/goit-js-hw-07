@@ -22,6 +22,15 @@ a {
   background-color: transparent;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
 h1,
 h2,
 p {
@@ -43,10 +52,11 @@ a {
 
 .container {
   margin: 0 auto;
-  max-width: 440px;
+  min-width: 440px;
   padding: 0 24px;
   align-items: center;
   text-align: left;
+  justify-content: center;
   font-weight: 600;
   font-size: 24px;
   line-height: 1.33333;
@@ -70,6 +80,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: center;
 }
 
 .ul-item {
@@ -97,4 +108,25 @@ a {
   content: '';
   width: 16px;
   display: inline-block;
+}
+
+/* task-2 */
+
+.container-task-two {
+  margin: 0 auto;
+  max-width: 1128px;
+  padding: 0 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.gallery {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+}
+
+img {
+  width: 360px;
+  height: 300px;
 }
