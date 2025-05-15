@@ -130,3 +130,29 @@ img {
   width: 360px;
   height: 300px;
 }
+
+/* task-3 */
+
+.div-task-tree {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.input-task-three {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
+  border: 1px solid #808080;
+  border-radius: 4px;
+  width: 360px;
+  height: 40px;
+  padding-left: 16px;
+}
+
+.h-one-task-three {
+  font-weight: 600;
+  font-size: 24px;
+  line-height: 1.33333;
+}
